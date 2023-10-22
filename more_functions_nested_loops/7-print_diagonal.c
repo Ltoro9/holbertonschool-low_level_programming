@@ -18,7 +18,7 @@ void print_diagonal(int n)
 	{
 		for (; j >= x; x++) 
 		{
-			for (; spc < k; spc++);
+			for (; spc < k; spc++)
 			{
 				if (k == 0)
 				{
