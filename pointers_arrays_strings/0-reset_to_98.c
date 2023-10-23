@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *@n: pointer to a variable 
+ *reset_to_98 - updates the value of the variable
+ *
+ *@n: pointer to a variable
  */
 void reset_to_98(int *n)
 {
