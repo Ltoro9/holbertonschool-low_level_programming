@@ -11,7 +11,7 @@ int _ayuda(int n, int i)
 	{
 		return (i);
 	}
-	if ( i * i > n)
+	if (i * i > n)
 	{
 		return (-1);
 	}
