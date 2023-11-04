@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	if (str == NULL)
 	{
 		return (NULL);
-	0}
+	}
 	copy = malloc(l * sizeof(char));
 
 	if (copy == NULL)
 	{
 		free(copy);
-		return (NULL);
+
 	}
 	strcpy(copy, str);
 
