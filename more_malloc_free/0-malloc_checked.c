@@ -1,20 +1,29 @@
-#include <stdlib.h>
+#include "main.h"
+
 /**
-*malloc_checked- allocate using malloc, use exits
-*
-*@b: number of spaces to reserve
-*Return: pointer to allocated memory
-*/
+ * malloc_checked - Function that allocates
+ * memory using malloc.
+ *
+ * @b: takes unsigned int as argument.
+ *
+ * Return: ptr.
+ */
 
 void *malloc_checked(unsigned int b)
 {
-	char *ptr;
+	char *p;
 
 	if (b <= 0)
+	{
 		exit(98);
-	ptr = malloc(sizeof(char) * b);
+	}
 
-	if (ptr == NULL)
+	p = malloc(sizeof(char) * b);
+
+	if (p == NULL)
+	{
 		exit(98);
-	return (ptr);
+	}
+
+	return (p);
 }
