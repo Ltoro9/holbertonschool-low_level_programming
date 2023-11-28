@@ -10,10 +10,10 @@
 
 size_t list_len(const list_t *h)
 {
-        int nodes;
+	int nodes;
 
-        for (nodes = 0; h != NULL; h = h->next)
-                nodes++;
+	for (nodes = 0; h != NULL; h = h->next)
+		nodes++;
 
-        return (nodes);
+	return (nodes);
 }
