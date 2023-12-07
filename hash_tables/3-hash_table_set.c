@@ -9,7 +9,6 @@
  * @ht: hash table
  * Return: index of of the key
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int size = 0;
@@ -35,17 +34,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		current_node = current_node->next;/* next node */
 	}
 
-	/*
-	 * this block of code only happens if no update was made
-	 */
-
 	new_node = malloc(sizeof(hash_node_t)); /* create new node*/
 	if (new_node == NULL)
 		return (-1);
-
-	/*
-	 * assign all values for node
-	 */
 
 	new_node->value = strdup(value);
 	new_node->key = strdup(key);
